@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/blankFragment_12">
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.navcomp.BlankFragment2"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_blank2" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="name" />
+        <argument
+            android:name="image"
+            app:argType="string"
+            android:defaultValue="src" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="description" />
+        <action
+            android:id="@+id/action_blankFragment2_to_blankFragment_12"
+            app:destination="@id/blankFragment_12"
+            app:enterAnim="@android:anim/fade_out"
+            app:exitAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_out"
+            app:popExitAnim="@android:anim/fade_in" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment_12"
+        android:name="com.example.navcomp.frag.BlankFragment_1"
+        android:label="blank_fragment_1_fragment"
+        tools:layout="@layout/blank_fragment_1_fragment" >
+        <action
+            android:id="@+id/action_blankFragment_12_to_blankFragment2"
+            app:destination="@id/blankFragment2"
+            app:enterAnim="@android:anim/fade_out"
+            app:exitAnim="@android:anim/fade_in" />
+    </fragment>
+</navigation>

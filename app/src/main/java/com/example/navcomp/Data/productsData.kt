@@ -1,0 +1,25 @@
+package com.example.mvvmtask.Data
+
+data class modeldata(
+    var id: String,
+    var name: String,
+    var tagline: String,
+    var first_brewed: String,
+    var description: String,
+    var image_url: String,
+    var abv: String,
+    var ibu: String,
+    var target_fg: String,
+    var target_og: String,
+    var ebc: String,
+    var srm: String,
+    var ph: String,
+    var attenuation_level: String,
+    var volume: Volume,
+    var boil_volume: Volume,
+    var method: Method,
+    var ingredients: Ingredients,
+    var food_pairing:ArrayList<String>,
+    var brewers_tips: String,
+    var contributed_by:String,
+)
