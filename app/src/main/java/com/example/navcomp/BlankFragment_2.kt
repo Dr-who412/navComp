@@ -8,8 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
-
 
 
 /**
@@ -21,7 +22,6 @@ class BlankFragment_2 : Fragment() {
     lateinit var name2:TextView
     lateinit var about2:TextView
     lateinit var Image2:ImageView
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -45,7 +45,9 @@ class BlankFragment_2 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank_2, container, false)
+        val view =inflater.inflate(R.layout.fragment_blank_2, container, false)
+        view.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_blankFragment_2_to_blankFragment_1) }
+        return view
 
     }
     @SuppressLint("SetTextI18n")
