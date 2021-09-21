@@ -8,9 +8,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
-        android:onClick="about"
-        android:layout_width="351dp"
-        android:layout_height="671dp"
+        android:layout_width="411dp"
+        android:layout_height="718dp"
         android:layout_margin="25dp"
         app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="30dp"
@@ -20,8 +19,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="436dp"
-            android:layout_height="749dp"
+            android:layout_width="596dp"
+            android:layout_height="789dp"
             android:background="@drawable/custom_background"
 
             app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -50,10 +49,10 @@
                 android:contentDescription="@string/todo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintHorizontal_bias="0.263"
                 app:layout_constraintStart_toEndOf="@+id/description2"
                 app:layout_constraintTop_toBottomOf="@+id/name2"
-                app:layout_constraintVertical_bias="0.023"
+                app:layout_constraintVertical_bias="0.009"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView

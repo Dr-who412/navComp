@@ -39,7 +39,7 @@ class MyViewModel : ViewModel() {
                         }
 
                         else -> {
-                            val errorJsonString = response?.errorBody()?.string()
+                            val errorJsonString = response.errorBody()?.string()
                             val json: JSONObject = JSONObject(errorJsonString)
                             val msg = json.getString("message")
                             error_message.postValue(msg)

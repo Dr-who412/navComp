@@ -10,7 +10,6 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mvvmtask.Data.modeldata
-import com.example.navcomp.frag.BlankFragment_1
 import com.example.navcomp.frag.BlankFragment_1Directions
 
 class CustomAdapter(var data:ArrayList<modeldata>, var productsFragment: View) : RecyclerView.Adapter<CustomAdapter.ViewHolder>(){

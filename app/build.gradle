@@ -59,6 +59,7 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_vers"
     //noinspection GradleDependency
     implementation "androidx.navigation:navigation-ui-ktx:$nav_vers"
-
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
 
 }
