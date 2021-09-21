@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BlankFragment2">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BlankFragment_2">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView7"
+        android:id="@+id/cardView6"
+        android:onClick="about"
         android:layout_width="351dp"
         android:layout_height="671dp"
         android:layout_margin="25dp"
@@ -28,30 +29,31 @@
 
             <TextView
                 android:id="@+id/description2"
-                android:layout_width="152dp"
-                android:layout_height="356dp"
+                android:layout_width="175dp"
+                android:layout_height="543dp"
                 android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:text="TextView"
+                android:text="@string/textview"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.01"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.608" />
+                app:layout_constraintVertical_bias="0.402" />
 
             <ImageView
                 android:id="@+id/image2"
-                android:layout_width="151dp"
-                android:layout_height="554dp"
+                android:layout_width="142dp"
+                android:layout_height="485dp"
                 android:layout_marginTop="12dp"
+                android:contentDescription="@string/todo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.238"
+                app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toEndOf="@+id/description2"
                 app:layout_constraintTop_toBottomOf="@+id/name2"
-                app:layout_constraintVertical_bias="0.033"
+                app:layout_constraintVertical_bias="0.023"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
@@ -59,16 +61,17 @@
                 android:layout_width="299dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="TextView"
+                android:text="@string/textview"
                 android:textColor="@color/white"
                 android:textSize="35sp"
                 app:layout_constraintBottom_toTopOf="@+id/description2"
                 app:layout_constraintEnd_toEndOf="@+id/image2"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.804"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.116" />
+                app:layout_constraintVertical_bias="0.8" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

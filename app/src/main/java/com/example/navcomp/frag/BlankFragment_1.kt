@@ -10,11 +10,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.navcomp.CustomAdapter
 import com.example.navcomp.MyViewModel
 import com.example.navcomp.R
@@ -26,7 +23,6 @@ class BlankFragment_1 : Fragment() {
     lateinit var adapter: CustomAdapter
     lateinit var nav: Navigation
     var myViewModel : MyViewModel = MyViewModel()
-    lateinit var swipe: SwipeRefreshLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -38,12 +34,7 @@ class BlankFragment_1 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         makeView(view)
-        swipe = view.findViewById(R.id.swipe)
-        swipe.setOnRefreshListener {
-            makeView(view)
-            Toast.makeText(view.context,"Refresh done",Toast.LENGTH_SHORT).show()
-            swipe.isRefreshing = false
-        }
+
     }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
