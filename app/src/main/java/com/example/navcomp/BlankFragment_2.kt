@@ -46,13 +46,14 @@ class BlankFragment_2 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_blank_2, container, false)
+
     }
     @SuppressLint("SetTextI18n")
     fun show(view: View, name:String, description:String, image:String){
         name2 = view.findViewById(R.id.name2)
         about2 = view.findViewById(R.id.description2)
         Image2 = view.findViewById(R.id.image2)
-        name2.text = "Name : $name"
+        name2.text = " $name"
         about2.text = "Description : $description"
         Glide.with(view.context).load(image).into(Image2)
     }

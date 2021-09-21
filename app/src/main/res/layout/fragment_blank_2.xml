@@ -7,10 +7,14 @@
     tools:context=".BlankFragment_2">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView6"
-        android:layout_width="411dp"
-        android:layout_height="718dp"
-        android:layout_margin="25dp"
+        android:id="@+id/cardView7"
+        android:layout_width="wrap_content"
+        android:layout_height="689dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
         app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,8 +23,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="596dp"
-            android:layout_height="789dp"
+            android:layout_width="373dp"
+            android:layout_height="733dp"
             android:background="@drawable/custom_background"
 
             app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -33,42 +37,40 @@
                 android:scrollbarAlwaysDrawHorizontalTrack="true"
                 android:text="@string/textview"
                 android:textColor="@color/white"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.08"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.402" />
+                app:layout_constraintVertical_bias="0.547" />
 
             <ImageView
                 android:id="@+id/image2"
-                android:layout_width="142dp"
-                android:layout_height="485dp"
+                android:layout_width="151dp"
+                android:layout_height="554dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="12dp"
-                android:contentDescription="@string/todo"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.263"
                 app:layout_constraintStart_toEndOf="@+id/description2"
                 app:layout_constraintTop_toBottomOf="@+id/name2"
-                app:layout_constraintVertical_bias="0.009"
+                app:layout_constraintVertical_bias="0.238"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/name2"
-                android:layout_width="299dp"
-                android:layout_height="wrap_content"
+                android:layout_width="316dp"
+                android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
                 android:text="@string/textview"
                 android:textColor="@color/white"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 app:layout_constraintBottom_toTopOf="@+id/description2"
                 app:layout_constraintEnd_toEndOf="@+id/image2"
-                app:layout_constraintHorizontal_bias="0.804"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.8" />
+                app:layout_constraintVertical_bias="0.729" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
